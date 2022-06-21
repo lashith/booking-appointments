@@ -5,13 +5,16 @@ import LogoMin from "../../../src/Resources/Images/logo-min.jpg";
 import Hamburge from "../../../src/Resources/Images/menu_hamburger_icon.png";
 import CloseIcon from "../../../src/Resources/Images/close_icon.png";
 const SideBar = (props) => {
+  const ids = ["journey", "education", "experience", "yourself", "appointment"];
   const toggleMenuHandler = () => {
-    console.log("test");
     if (props.value === false) {
       props.toggle(true);
     } else {
       props.toggle(false);
     }
+  };
+  const eventHandler = (ev) => {
+    props.onItem(ev.currentTarget.id);
   };
   return (
     <div className={classes["side-bar"]}>
@@ -49,11 +52,13 @@ const SideBar = (props) => {
         <ul className={classes["side-bar-menu"]}>
           <li>
             <Button
+              id={ids[0]}
               className={
                 props.value === false
                   ? "btn-sidebar-menu"
                   : "btn-sidebar-menu-2"
               }
+              onClick={eventHandler}
             >
               <span className={classes.journey}></span>
               {props.value === false ? "Your Journey" : ""}
@@ -61,11 +66,13 @@ const SideBar = (props) => {
           </li>
           <li>
             <Button
+              id={ids[1]}
               className={
                 props.value === false
                   ? "btn-sidebar-menu"
                   : "btn-sidebar-menu-2"
               }
+              onClick={eventHandler}
             >
               <span className={classes.education}></span>{" "}
               {props.value === false ? "Education details" : ""}
@@ -73,11 +80,13 @@ const SideBar = (props) => {
           </li>
           <li>
             <Button
+              id={ids[2]}
               className={
                 props.value === false
                   ? "btn-sidebar-menu"
                   : "btn-sidebar-menu-2"
               }
+              onClick={eventHandler}
             >
               <span className={classes.experience}></span>{" "}
               {props.value === false ? "Experience" : ""}
@@ -85,11 +94,13 @@ const SideBar = (props) => {
           </li>
           <li>
             <Button
+              id={ids[3]}
               className={
                 props.value === false
                   ? "btn-sidebar-menu"
                   : "btn-sidebar-menu-2"
               }
+              onClick={eventHandler}
             >
               <span className={classes.yourself}></span>{" "}
               {props.value === false ? "Yourself" : ""}
@@ -97,14 +108,16 @@ const SideBar = (props) => {
           </li>
           <li className={classes.active}>
             <Button
+              id={ids[4]}
               className={
                 props.value === false
                   ? "btn-sidebar-menu active"
                   : "btn-sidebar-menu-2 active"
               }
+              onClick={eventHandler}
             >
               <span className={classes.appoinments}></span>{" "}
-              {props.value === false ? "Appoinments" : ""}
+              {props.value === false ? "Appointment" : ""}
             </Button>
           </li>
         </ul>
