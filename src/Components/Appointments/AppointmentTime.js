@@ -1,4 +1,4 @@
-import Button from "../UI/Button";
+import Button from "../../UI/Button";
 import classes from "./AppointmentTime.module.css";
 const AppointmentTime = (props) => {
   const timeTable = {
@@ -35,7 +35,7 @@ const AppointmentTime = (props) => {
       <h5 className={classes.title}>Select your appointment time slot</h5>
       <div className={`row ${classes["tin"]}`}>
         <div className={`col-4 ${classes["bar-line"]}`}>
-          <h5 className={classes['sub-title']}>Morning</h5>
+          <h5 className={classes["sub-title"]}>Morning</h5>
           <div>
             <ul className={classes.timelist}>
               {timeTable.morningTime.map((time) => (
@@ -53,7 +53,7 @@ const AppointmentTime = (props) => {
           </div>
         </div>
         <div className={`col-4 ${classes["bar-line"]}`}>
-          <h5 className={classes['sub-title']}>Afternoon</h5>
+          <h5 className={classes["sub-title"]}>Afternoon</h5>
           <div>
             <ul className={classes.timelist}>
               {timeTable.afternoonTime.map((time) => (
@@ -71,7 +71,7 @@ const AppointmentTime = (props) => {
           </div>
         </div>
         <div className={"col-4"}>
-          <h5 className={classes['sub-title']}>Evening</h5>
+          <h5 className={classes["sub-title"]}>Evening</h5>
           <div>
             <ul className={classes.timelist}>
               {timeTable.eveningTime.map((time) => (

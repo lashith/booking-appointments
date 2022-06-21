@@ -1,9 +1,9 @@
-import Button from "../UI/Button";
+import Button from "../../UI/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import classes from "./AppointmentSuccess.module.css";
-import SuccessAppointment from "../Resources/Images/SuccessAppointment.jpg";
+import SuccessAppointment from "../../Resources/Images/SuccessAppointment.jpg";
 
 const AppointmentSuccess = (props) => {
   const formatDate = props.date.split(".");

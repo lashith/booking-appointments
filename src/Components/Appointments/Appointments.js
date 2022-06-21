@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Card from "../UI/Card/Card";
+import Card from "../../UI/Card/Card";
 import AppointmentDate from "./AppointmentDate";
 import AppointmentTime from "./AppointmentTime";
 import AppointmentSuccess from "./AppointmentSuccess";
 import Breadcumbs from "./Breadcumbs";
-import Modal from "../UI/Modal";
+import Modal from "../../UI/Modal";
 import classes from "./Appointments.module.css";
 
 const Appointments = (props) => {

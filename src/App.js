@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./UI/Header/Header";
 import SideBar from "./UI/SideBar/SideBar";
-import Appointments from "./Appointments/Appointments";
+import Appointments from "./Components/Appointments/Appointments";
 import "./App.css";
 
 function App() {
