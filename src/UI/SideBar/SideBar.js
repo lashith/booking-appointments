@@ -48,33 +48,61 @@ const SideBar = (props) => {
       <h3>
         <ul className={classes["side-bar-menu"]}>
           <li>
-            <Button className={"btn-sidebar-menu"}>
+            <Button
+              className={
+                props.value === false
+                  ? "btn-sidebar-menu"
+                  : "btn-sidebar-menu-2"
+              }
+            >
               <span className={classes.journey}></span>
               {props.value === false ? "Your Journey" : ""}
             </Button>
           </li>
           <li>
-            <Button className={"btn-sidebar-menu"}>
+            <Button
+              className={
+                props.value === false
+                  ? "btn-sidebar-menu"
+                  : "btn-sidebar-menu-2"
+              }
+            >
               <span className={classes.education}></span>{" "}
               {props.value === false ? "Education details" : ""}
             </Button>
           </li>
           <li>
-            <Button className={"btn-sidebar-menu"}>
-              {" "}
+            <Button
+              className={
+                props.value === false
+                  ? "btn-sidebar-menu"
+                  : "btn-sidebar-menu-2"
+              }
+            >
               <span className={classes.experience}></span>{" "}
               {props.value === false ? "Experience" : ""}
             </Button>
           </li>
           <li>
-            <Button className={"btn-sidebar-menu"}>
+            <Button
+              className={
+                props.value === false
+                  ? "btn-sidebar-menu"
+                  : "btn-sidebar-menu-2"
+              }
+            >
               <span className={classes.yourself}></span>{" "}
               {props.value === false ? "Yourself" : ""}
             </Button>
           </li>
           <li className={classes.active}>
-            <Button className={"btn-sidebar-menu active"}>
-              {" "}
+            <Button
+              className={
+                props.value === false
+                  ? "btn-sidebar-menu active"
+                  : "btn-sidebar-menu-2 active"
+              }
+            >
               <span className={classes.appoinments}></span>{" "}
               {props.value === false ? "Appoinments" : ""}
             </Button>

@@ -221,6 +221,13 @@ p {
   width: 100%;
   color: #767676;
 }
+.btn-sidebar-menu-2 {
+  background-color: transparent;
+}
+.btn-sidebar-menu-2:hover,
+.btn-sidebar-menu-2.active {
+  background-color: rgb(54, 118, 202, 0.2);
+}
 .btn-sidebar-menu span {
   margin-right: 1rem;
 }
