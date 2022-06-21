@@ -1,7 +1,6 @@
 import Card from "../Card/Card";
 import classes from "./Header.module.css";
 import userLogo from "../../../src/Resources/Images/user_avatar_icon.png";
-import BrandImg from "../../../src/Resources/Images/brand-img.jpg";
 const Header = () => {
   return (
     <div>
@@ -17,8 +16,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        {/* <img src={BrandImg} alt='BrandImg' className={classes["brand-img"]} /> */}
       </Card>
     </div>
   );
