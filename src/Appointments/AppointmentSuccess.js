@@ -3,13 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import classes from "./AppointmentSuccess.module.css";
-// import SuccessAppointment from "../../../src/Resources/Images/SuccessAppointment.jpg";
 import SuccessAppointment from "../Resources/Images/SuccessAppointment.jpg";
+
 const AppointmentSuccess = (props) => {
   const formatDate = props.date.split(".");
   let newDay = formatDate[0];
   let newMonth = formatDate[1];
-  const newMonthName = "";
   if (newMonth === "01") {
     newMonth = "Jan";
   }
@@ -81,9 +80,10 @@ const AppointmentSuccess = (props) => {
               <div className='col-12'>
                 <p>Save yourself prepared for the Interview.!</p>
                 <p>
-                  <a href='guidence'>
+                  Refer
+                  <Button className={"default-btn"}>
                     <b>Tips {`&`} Guidence</b>
-                  </a>{" "}
+                  </Button>
                   for preparation.
                 </p>
               </div>

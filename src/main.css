@@ -208,6 +208,12 @@ p {
   background-color: transparent;
   font-size: 1rem !important;
 }
+.default-btn {
+  background: transparent;
+    text-decoration: underline !important;
+    font-size: 1rem !important;
+    font-weight: normal;
+}
 .btn-sidebar-menu {
   display: inline-flex;
   background-color: transparent;
