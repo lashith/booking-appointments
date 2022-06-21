@@ -204,7 +204,30 @@ p {
 .close:hover svg path {
   color: #093876;
 }
-
+.btn-sidebar {
+  background-color: transparent;
+  font-size: 1rem !important;
+}
+.btn-sidebar-menu {
+  display: inline-flex;
+  background-color: transparent;
+  font-size: 1rem !important;
+  width: 100%;
+  color: #767676;
+}
+.btn-sidebar-menu span {
+  margin-right: 1rem;
+}
+.btn-sidebar-menu:hover {
+  color: #3676ca;
+  background-color: rgb(54, 118, 202, 0.2);
+  border-radius: 0.2rem;
+}
+.btn-sidebar-menu.active {
+  color: #3676ca;
+  background-color: rgb(54, 118, 202, 0.2);
+  border-radius: 0.2rem;
+}
 @media only screen and (min-width: 33.75em) {
   /* 540px */
   .container {

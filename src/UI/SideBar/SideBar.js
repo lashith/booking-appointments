@@ -1,3 +1,4 @@
+import Button from "../Button";
 import classes from "./SideBar.module.css";
 import Logo from "../../../src/Resources/Images/logo.jpg";
 import LogoMin from "../../../src/Resources/Images/logo-min.jpg";
@@ -25,7 +26,7 @@ const SideBar = (props) => {
           </div>
           <div className={"col-3"}>
             {
-              <a href='#' onClick={toggleMenuHandler}>
+              <Button className={"btn-sidebar"} onClick={toggleMenuHandler}>
                 {props.value === false ? (
                   <img
                     src={Hamburge}
@@ -39,7 +40,7 @@ const SideBar = (props) => {
                     className={classes["close-img"]}
                   />
                 )}
-              </a>
+              </Button>
             }
           </div>
         </div>
@@ -47,36 +48,36 @@ const SideBar = (props) => {
       <h3>
         <ul className={classes["side-bar-menu"]}>
           <li>
-            <a href='#'>
+            <Button className={"btn-sidebar-menu"}>
               <span className={classes.journey}></span>
               {props.value === false ? "Your Journey" : ""}
-            </a>
+            </Button>
           </li>
           <li>
-            <a href='#'>
+            <Button className={"btn-sidebar-menu"}>
               <span className={classes.education}></span>{" "}
               {props.value === false ? "Education details" : ""}
-            </a>
+            </Button>
           </li>
           <li>
-            <a href='#'>
+            <Button className={"btn-sidebar-menu"}>
               {" "}
               <span className={classes.experience}></span>{" "}
               {props.value === false ? "Experience" : ""}
-            </a>
+            </Button>
           </li>
           <li>
-            <a href='#'>
+            <Button className={"btn-sidebar-menu"}>
               <span className={classes.yourself}></span>{" "}
               {props.value === false ? "Yourself" : ""}
-            </a>
+            </Button>
           </li>
           <li className={classes.active}>
-            <a href='#'>
+            <Button className={"btn-sidebar-menu active"}>
               {" "}
               <span className={classes.appoinments}></span>{" "}
               {props.value === false ? "Appoinments" : ""}
-            </a>
+            </Button>
           </li>
         </ul>
       </h3>

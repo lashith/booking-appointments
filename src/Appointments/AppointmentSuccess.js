@@ -81,7 +81,7 @@ const AppointmentSuccess = (props) => {
               <div className='col-12'>
                 <p>Save yourself prepared for the Interview.!</p>
                 <p>
-                  <a href='#'>
+                  <a href='guidence'>
                     <b>Tips {`&`} Guidence</b>
                   </a>{" "}
                   for preparation.
