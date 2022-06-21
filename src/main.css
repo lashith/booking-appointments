@@ -210,9 +210,9 @@ p {
 }
 .default-btn {
   background: transparent;
-    text-decoration: underline !important;
-    font-size: 1rem !important;
-    font-weight: normal;
+  text-decoration: underline !important;
+  font-size: 1rem !important;
+  font-weight: normal;
 }
 .btn-sidebar-menu {
   display: inline-flex;
@@ -233,6 +233,54 @@ p {
   color: #3676ca;
   background-color: rgb(54, 118, 202, 0.2);
   border-radius: 0.2rem;
+}
+.btnbreadcrumb {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none !important;
+  outline: none;
+  display: block;
+  float: left;
+  color: white !important;
+  font-size: 0.8rem !important;
+  line-height: 2rem;
+  width: 13rem;
+  padding-left: 2rem !important;
+  position: relative;
+  background: #3676ca !important;
+  font-weight: bold;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 25%);
+  padding: 0 !important;
+}
+
+.btnbreadcrumb.active,
+.btnbreadcrumb:hover {
+  background: #222753 !important;
+  background: #767676 !important;
+  color: #333447 !important;
+  transition: all 1s;
+}
+.btnbreadcrumb.active:after,
+.btnbreadcrumb:hover:after {
+  background: #222753;
+  background: #767676;
+  transition: all 1s;
+}
+.btnbreadcrumb:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  width: 2rem;
+  height: 2rem;
+  transform: scale(0.707) rotate(45deg);
+  z-index: 1;
+  background: #3676ca;
+  box-shadow: 0.3rem -0.3rem 0 0.2rem rgba(255, 255, 255, 0.8);
+  border-radius: 0 0.5rem 0 5rem;
+  padding: 0;
+}
+.btnbreadcrumb.active svg path {
+  color: #fff;
 }
 @media only screen and (min-width: 33.75em) {
   /* 540px */

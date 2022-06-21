@@ -4,7 +4,7 @@
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
-.breadcrumb a {
+.btnbreadcrumb {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   outline: none;
@@ -19,22 +19,23 @@
   background: #3676ca;
   font-weight: bold;
   box-shadow: 0 1px 8px rgb(0 0 0 / 25%);
+  padding: 0;
 }
 
-.breadcrumb a.active,
-.breadcrumb a:hover {
+.btnbreadcrumb.active,
+.btnbreadcrumb:hover {
   background: #222753;
   background: #767676;
   color: #333447;
   transition: all 1s;
 }
-.breadcrumb a.active:after,
-.breadcrumb a:hover:after {
+.btnbreadcrumb.active:after,
+.btnbreadcrumb:hover:after {
   background: #222753;
   background: #767676;
   transition: all 1s;
 }
-.breadcrumb a:after {
+.btnbreadcrumb:after {
   content: "";
   position: absolute;
   top: 0;
@@ -46,7 +47,8 @@
   background: #3676ca;
   box-shadow: 0.3rem -0.3rem 0 0.2rem rgba(255, 255, 255, 0.8);
   border-radius: 0 0.5rem 0 5rem;
+  padding: 0;
 }
-.breadcrumb a.active svg path {
+.btnbreadcrumb.active svg path {
   color: #fff;
 }
