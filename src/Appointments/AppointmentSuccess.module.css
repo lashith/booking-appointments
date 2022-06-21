@@ -30,6 +30,9 @@ img {
   color: #767676;
   text-align: center;
 }
+.successfull-info h5 {
+  font-size: 1.5rem;
+}
 .successfull-info-message {
   text-align: center;
   padding: 1.5rem 0rem;
