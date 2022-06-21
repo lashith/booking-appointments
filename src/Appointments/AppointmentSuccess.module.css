@@ -23,6 +23,7 @@ img {
 .successfull-info h6 {
   font-size: 1.2rem;
   text-transform: capitalize;
+  font-weight: normal;
 }
 .successfull-info h5,
 .successfull-info h6 {
