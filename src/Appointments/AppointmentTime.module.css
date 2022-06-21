@@ -1,0 +1,39 @@
+.tin [class^="col"] {
+  margin: 0.5rem 0.5%;
+}
+h5 {
+  text-align: center;
+}
+.title {
+  margin-top: 0;
+}
+.sub-title {
+  color: #767676;
+  margin-bottom: 0.5rem;
+}
+.timelist {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.timelist li {
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: #3676ca;
+  background-color: rgb(54, 118, 202, 0.2);
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #3676ca;
+}
+.bar-line {
+  border-right: 0.01rem solid rgb(0, 0, 0, 0.1);
+}

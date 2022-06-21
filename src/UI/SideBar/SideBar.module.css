@@ -1,0 +1,105 @@
+.side-bar {
+  border-radius: 0;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0.7rem -0.7rem 0.7rem -0.9rem rgb(0 0 0 / 25%);
+  padding: 0rem 0.6rem;
+  height: 100vh;
+}
+.side-bar--header {
+}
+.logo {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+.logo-min {
+  width: 2rem;
+  margin-top: 0.5rem;
+}
+.hamburge-img,
+.close-img {
+  width: 2.5rem;
+}
+.close-img {
+  margin-left: 1.2rem;
+}
+.side-bar-menu {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.side-bar-menu li {
+  border-bottom: 0.01rem solid rgb(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+.side-bar-menu li a:hover {
+  color: #3676ca;
+  background-color: rgb(54, 118, 202, 0.2);
+  border-radius: 0.2rem;
+}
+.side-bar-menu li.active a {
+  color: #3676ca;
+  background-color: rgb(54, 118, 202, 0.2);
+  border-radius: 0.2rem;
+}
+.side-bar-menu a {
+  color: #767676;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.side-bar-menu a span {
+  margin-right: 0.5rem;
+}
+.journey {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../../src/Resources/Images/chart_icon.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.education {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../../src/Resources/Images/degree_icon.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.experience {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../../src/Resources/Images/work_icon.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.yourself {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../../src/Resources/Images/file__icon.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.appoinments {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../../src/Resources/Images/appoinment_icon.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.side-bar-menu li.active a span.appoinments {
+  background-image: url(../../../src/Resources/Images/appoinment-blue_icon.png);
+}

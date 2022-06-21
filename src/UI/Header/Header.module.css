@@ -1,0 +1,27 @@
+.user-img {
+  width: 5.5rem;
+}
+.brand-img {
+}
+.header-bar {
+  background-image: url(../../../src/Resources/Images/brand-img.jpg);
+  background-size: 50%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.user-info {
+  position: absolute;
+  top: 20%;
+  display: inline-block;
+  left: 6rem;
+}
+.user-info h5,
+h6 {
+  margin: auto 0;
+  color: #3676ca;
+  text-transform: uppercase;
+  text-align: left;
+}
+h6 {
+  color: rgb(54, 118, 202, 0.7);
+}

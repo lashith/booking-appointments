@@ -1,0 +1,52 @@
+.breadcrumb {
+  display: inline-block;
+  overflow: inherit;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.breadcrumb a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  outline: none;
+  display: block;
+  float: left;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  width: 10rem;
+  padding-left: 2rem;
+  position: relative;
+  background: #3676ca;
+  font-weight: bold;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 25%);
+}
+
+.breadcrumb a.active,
+.breadcrumb a:hover {
+  background: #222753;
+  background: #767676;
+  color: #333447;
+  transition: all 1s;
+}
+.breadcrumb a.active:after,
+.breadcrumb a:hover:after {
+  background: #222753;
+  background: #767676;
+  transition: all 1s;
+}
+.breadcrumb a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  width: 2rem;
+  height: 2rem;
+  transform: scale(0.707) rotate(45deg);
+  z-index: 1;
+  background: #3676ca;
+  box-shadow: 0.3rem -0.3rem 0 0.2rem rgba(255, 255, 255, 0.8);
+  border-radius: 0 0.5rem 0 5rem;
+}
+.breadcrumb a.active svg path {
+  color: #fff;
+}

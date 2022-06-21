@@ -1,0 +1,22 @@
+.header {
+  background-color: #3676ca;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.header h3,
+.header h5 {
+  color: #fff;
+  margin: 0;
+}
+.appointment-box {
+  margin-top: 2rem;
+}
+button {
+  font-weight: bold;
+}
+.sub-title {
+  color: #333447;
+  font-weight: bold;
+  margin: 1rem 0;
+}

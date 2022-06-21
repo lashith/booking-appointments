@@ -1,0 +1,61 @@
+.tin [class^="col"] {
+  margin: 0.5rem 0.5%;
+}
+.success-box {
+  margin-top: 2rem;
+}
+img {
+  width: 100%;
+}
+.bar-line {
+  border-left: 0.01rem solid rgb(0, 0, 0, 0.1);
+}
+.border-line {
+  border-right: 0.01rem solid rgb(0, 0, 0, 0.1);
+}
+.title {
+  font-size: 1.6rem;
+}
+.successfull-info {
+  text-align: center;
+  color: #767676;
+}
+.successfull-info h6 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.successfull-info h5,
+.successfull-info h6 {
+  margin: 0;
+  color: #767676;
+  text-align: center;
+}
+.successfull-info-message {
+  text-align: center;
+  padding: 1.5rem 0rem;
+}
+.successfull-info-message p,
+.successfull-info-message p b {
+  margin: 0;
+  color: #767676;
+}
+.successfull-info-footer {
+  text-align: center;
+}
+.successfull-info-footer button {
+  margin: 0.5rem;
+  padding: 0.4rem 1.2rem;
+}
+.blue {
+  background-color: #3676ca;
+  color: #fff;
+}
+.blue:hover {
+  background-color: #093876;
+}
+.blue svg path {
+  color: #fff;
+}
+.success-img img {
+  margin-top: 1rem;
+}

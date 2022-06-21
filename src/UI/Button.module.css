@@ -1,0 +1,18 @@
+.btn,
+.button {
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-confirm {
+  color: #fff;
+  background-color: #3676ca;
+}
+.btn-cancel {
+  color: #3676ca;
+  background-color: #fff;
+}
