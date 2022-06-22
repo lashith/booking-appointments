@@ -205,6 +205,11 @@ p {
   color: #093876;
 }
 .btn-sidebar {
+  position: absolute;
+  top: 54%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   background-color: transparent;
   font-size: 1rem !important;
 }

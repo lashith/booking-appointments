@@ -42,10 +42,10 @@ const ModalOverlay = (props) => {
       </div>
       <footer className={classes.actions}>
         <Button className={`${"btn-cancel"}`} onClick={props.onCancel}>
-          Cancel
+          {props.btnCancel}
         </Button>
         <Button className={`${"btn-confirm"}`} onClick={props.onConfirm}>
-          book Now
+          {props.btnOk}
         </Button>
       </footer>
     </Card>
@@ -66,6 +66,8 @@ const Modal = (props) => {
           date={props.date}
           onConfirm={props.onConfirm}
           onCancel={props.onCancel}
+          btnOk={props.btnOk}
+          btnCancel={props.btnCancel}
         />,
         document.getElementById("overlay-root")
       )}

@@ -28,6 +28,8 @@ const Appointments = (props) => {
         secondaryTitle: "This is to confirm your booking with us.",
         time: timeValue,
         date: dateValue,
+        btnOk: "book Now",
+        btnCancel: "Cancel",
       });
       setModalShow(true);
     }
@@ -52,6 +54,8 @@ const Appointments = (props) => {
           date={modalData.date}
           onConfirm={modalConfirmHandler}
           onCancel={modalCancelHandler}
+          btnOk={modalData.btnOk}
+          btnCancel={modalData.btnCancel}
         />
       ) : (
         ""
